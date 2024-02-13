@@ -147,10 +147,10 @@ const promptEngineer = () => {
       },
       {
         type: "input",
-        name: "githubUsername",
+        name: "github",
         message: "Enter your Github username. (Required)",
-        validate: (githubUsername) => {
-          if (githubUsername) {
+        validate: (github) => {
+          if (github) {
             return true;
           } else {
             console.log("Please enter your Github username!");
@@ -161,7 +161,7 @@ const promptEngineer = () => {
     ])
     .then((answers) => {
       console.log(answers);
-      const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.githubUsername);
+      const engineer = new Engineer(answers.name, answers.employeeId, answers.email, answers.github);
       teamMembers.push(engineer);
       promptMenu();
     });

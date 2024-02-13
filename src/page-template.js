@@ -6,7 +6,7 @@ const generateTeam = (team) => {
   const generateManager = (manager) => {
     console.log(manager);
     let managerHtml = ` 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 20rem;">
             <div class="card-header">
            ${manager.name} <br/>
            <i class="fas fa-mug-hot"></i>Manager</div>
@@ -22,14 +22,14 @@ const generateTeam = (team) => {
   const generateEngineer = (engineer) => {
     console.log(engineer);
     let engineerHtml = ` 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 20rem;">
             <div class="card-header">
            ${engineer.name} <br/>
            <i class="fas fa-glasses"></i>Engineer</div>
            <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: ${engineer.id}</li>
             <li class="list-group-item">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
-            <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${engineer.githubUsername}">${engineer.githubUsername}</a></li>
+            <li class="list-group-item">Github Username: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a></li>
             </ul>
         </div>
         `;
@@ -38,7 +38,7 @@ const generateTeam = (team) => {
   const generateIntern = (intern) => {
     console.log(intern);
     let internHtml = ` 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 20rem;">
             <div class="card-header">
            ${intern.name} <br/>
            <i class="fas fa-user-graduate"></i>Intern</div>

@@ -36,7 +36,9 @@ Inquirer is installed with npm command: `npm install inquirer`. Then you can loa
 1. Enter management information
 2. You will be redirected to a menu, where you can choose to add an engineer, add an intern, or end the application
 3. If you choose to add an engineer or an intern, you will be reprompted to the menu until you choose to end the application
-4. Once you end the application, your software team will be generated in an HTML file
+4. Once you end the application, your software team will be generated in an HTML file. A sample HTML file is provided in the output folder as team.html to demonstrate the result at the end. Here is a screenshot:
+
+![Team profile](./images/Screenshot%202024-02-13%20at%201.54.34%20am.png)
 
 ## License
 
@@ -48,7 +50,9 @@ To contribute to Team_profile_generator, clone this repo locally and commit your
 
 ## Tests
 
-Tests are done through the terminal using command `npm run test`. All test files have passed.
+Tests are done through the terminal using command `npm run test`. All test files have passed. Here is a screenshot for the passed test in the console:
+
+![Test](./images/Screenshot%202024-02-13%20at%201.28.40%20am.png)
 
 ## Technology Used
 
